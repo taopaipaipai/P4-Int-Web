@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap');
+
+//variables globale
+
+// couleur
+$primary-color: #FFFFFF;
+$secondary-color: #F6F6F6;
+$accent-color: #353535;
+
+// import des partiels
+@import "./partiels/header";
+@import "./partiels/generale";
+@import "./partiels/footer";

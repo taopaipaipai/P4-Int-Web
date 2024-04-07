@@ -1,0 +1,20 @@
+#header {
+
+    .logoHeader {
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+
+    #header {
+        margin: 25px;
+
+        .logoHeader {
+            font-size: 44px;
+        }
+    }
+}

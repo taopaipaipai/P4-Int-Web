@@ -1,0 +1,35 @@
+body {
+    max-width: 425px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+ul {
+    list-style-type: none;
+    margin: unset;
+    padding: unset;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: "Shrikhand", serif;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 1425px;
+        margin: 0 auto;
+        border: 1px solid black;
+    }
+}
