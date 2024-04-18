@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
+/* CSS pour header */
 #header .logoHeader {
   font-size: 25px;
   text-align: center;
 }
 
-/* Desktop */
+/* Desktop pour header */
 @media (min-width: 1024px) {
   #header {
     margin: 25px;
@@ -14,10 +15,11 @@
     font-size: 44px;
   }
 }
+/* Fin CSS pour header */
+/* CSS pour le generale */
 body {
   max-width: 425px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 ul {
@@ -35,25 +37,288 @@ a {
   font-family: "Shrikhand", serif;
   font-style: italic;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
 }
 
-/* Desktop */
+/* Desktop pour le generale */
 @media (min-width: 1024px) {
   body {
     max-width: 1425px;
     margin: 0 auto;
-    border: 1px solid black;
   }
 }
+/* fin CSS pour le generale */
+/* CSS pour body de la page d'accueil */
+.Positionement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #ebebeb;
+  box-shadow: inset 0 10px 8px -5px #d5d5d5;
+  width: 100%;
+}
+.Positionement_texte {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.ExplorerReserver {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10%;
+}
+@media screen and (min-width: 1024px) {
+  .ExplorerReserver {
+    padding-bottom: 2%;
+  }
+}
+.ExplorerReserver_titre {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 25px 0px 0px 0px;
+}
+@media screen and (min-width: 1024px) {
+  .ExplorerReserver_titre {
+    margin: 20px 0px;
+    font-size: 40px;
+  }
+}
+.ExplorerReserver_texte {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (min-width: 1024px) {
+  .ExplorerReserver_texte {
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+}
+.ExplorerReserver_bouton {
+  border: none;
+  text-align: center;
+  line-height: 50px;
+  color: #F3F3F3;
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  height: 50px;
+  width: 60%;
+  max-width: 218px;
+  border-radius: 25px;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  opacity: 1;
+  transition: opacity 200ms, transform 200ms ease-in-out;
+}
+.ExplorerReserver_bouton:hover {
+  box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.2509803922);
+  opacity: 0.8;
+  transition: all 200ms ease-in-out;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10%;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement {
+    padding-bottom: 0;
+  }
+}
+.fonctionnement .fonctionnementTitre {
+  margin-left: 8%;
+  font-size: 24px;
+  font-weight: 700;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement .fonctionnementTitre {
+    width: 35%;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+}
+.fonctionnement .fonctionnementContainer {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement .fonctionnementContainer {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.fonctionnementCarte {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px 6% 0% 10%;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  background: #F3F3F3;
+  border-radius: 20px;
+  min-height: 70px;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnementCarte {
+    margin: 2%;
+    padding-right: 1%;
+    min-width: 22%;
+  }
+}
+.fonctionnementCarte .fonctionnementCarteNumber {
+  transform: translateX(-12px);
+  text-align: center;
+  color: white;
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #9356DC;
+}
+.fonctionnementCarte .fonctionnementCarteIcon {
+  margin: 0 15px 0 6px;
+}
+
+/* liste des restaurants */
+.resto_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background: #F3F3F3;
+  padding: 10% 0% 14% 0%;
+}
+@media screen and (min-width: 1024px) {
+  .resto_container {
+    padding: 0% 0% 4% 0%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.resto_container .resto_titre {
+  width: 90%;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 15px 0px 0px 0px;
+}
+@media screen and (min-width: 1024px) {
+  .resto_container .resto_titre {
+    width: 77%;
+    margin: 20px 0 0 0;
+  }
+}
+.resto_container .carte_lien {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.resto_container .carte {
+  position: relative;
+  width: 90%;
+  margin-top: 6%;
+  height: 241px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+@media screen and (min-width: 1024px) {
+  .resto_container .carte {
+    margin: 2%;
+    width: 35%;
+  }
+}
+.resto_container .carte_images {
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  height: 70%;
+}
+.resto_container .carte_nouveau {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px;
+  background: #99E2D0;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.carte_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+.carte_content .carte_texte .carte_content_titre {
+  margin: 0%;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.carte_content .carte_texte .carte_content_description {
+  margin: 0%;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+.heart_container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full_heart {
+  position: absolute;
+  transition: 2s;
+  font-size: 0;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-clip: text;
+  color: transparent;
+}
+
+.empty_heart {
+  opacity: 1;
+  transition: 2s;
+  font-size: 25px;
+}
+
+.heart_container:hover .empty_heart {
+  opacity: 0;
+}
+
+.heart_container:hover .full_heart {
+  font-size: 25px;
+}
+
+/* fin CSS pour body de la page d'accueil */
+/* CSS pour footer */
 #footer {
   background-color: #353535;
   padding: 10px 0px 40px 10px;
 }
 #footer .logoFooter {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 18px;
 }
 #footer .texteFooter {
@@ -79,7 +344,7 @@ a {
   color: #FFFFFF;
 }
 
-/* Desktop */
+/* Desktop pour Footer */
 @media (min-width: 1024px) {
   #footer {
     display: flex;
@@ -98,5 +363,6 @@ a {
     gap: 36px;
   }
 }
+/* fin CSS pour footer */
 
 /*# sourceMappingURL=styles.css.map */

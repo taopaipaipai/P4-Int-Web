@@ -1,7 +1,9 @@
+/* CSS pour le generale */
+
 body {
     max-width: 425px;
     margin: 0 auto;
-    border: 1px solid black;
+    //border: 1px solid black;
 }
 
 ul {
@@ -19,17 +21,20 @@ a {
     font-family: "Shrikhand", serif;
     font-style: italic;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
 }
 
-/* Desktop */
 
-@media (min-width: 1024px) {
+/* Desktop pour le generale */
+
+@media (min-width: $desktop-width) {
     body {
         max-width: 1425px;
         margin: 0 auto;
-        border: 1px solid black;
+        //border: 1px solid black;
     }
 }
+
+/* fin CSS pour le generale */

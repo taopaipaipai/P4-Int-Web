@@ -1,3 +1,4 @@
+/* CSS pour header */
 #header {
 
     .logoHeader {
@@ -6,9 +7,9 @@
     }
 }
 
-/* Desktop */
+/* Desktop pour header */
 
-@media (min-width: 1024px) {
+@media (min-width: $desktop-width) {
 
     #header {
         margin: 25px;
@@ -18,3 +19,5 @@
         }
     }
 }
+
+/* Fin CSS pour header */

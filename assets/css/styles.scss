@@ -4,11 +4,22 @@
 //variables globale
 
 // couleur
-$primary-color: #FFFFFF;
-$secondary-color: #F6F6F6;
-$accent-color: #353535;
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-white: #FFFFFF;
+$color-background: #F3F3F3;
+$color-dark_grey: #353535;
+
+//taille device ou breakpoint
+$tablette-width: 767px;
+$desktop-width: 1024px;
+
+// import des mixins
+@import "./partiels/mixins";
 
 // import des partiels
 @import "./partiels/header";
 @import "./partiels/generale";
+@import "./partiels/allbody_page-accueil";
 @import "./partiels/footer";
