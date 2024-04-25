@@ -1,0 +1,71 @@
+// Mixin "factoriser" de la keyframes modèle qui sera appelé dans d'autres fichier SCSS avec comme
+// passage de parametre "la Hauteur" en px --> Négatif si on veux descendre
+//                                      ou --> Positif si on veux monter
+// et le "Nom" de la keyframe que l'on souhaite lui donner
+
+@mixin keyFrames($hauteur, $nomKeyFram) {
+    @keyframes #{$nomKeyFram} {
+        0% {
+            transform: translateY($hauteur);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+/*
+ Ensemble de keyframes qui seront appelées sur d'autres fichier SCSS
+*/
+
+// keyframe appelé et en parametre le nom de la keyframe et
+// la hauteur - ou + selon le sens que l'on veux lui donner
+
+@include keyFrames(-200px, AnimationVersBas);
+@include keyFrames(80px, AnimationVersHaut);
+
+/*
+Keyframes pour les animations de Flottement
+*/
+
+@keyframes flottementLogoBanner {
+
+    0%,
+    50%,
+    100% {
+        transform: translate(-10, -100);
+        /* Position initiale, pour la suite le flottement se fait en X et Y */
+    }
+
+    20% {
+        transform: translate(50px, -20px);
+    }
+
+    40% {
+        transform: translate(20px, -30px);
+    }
+
+    80% {
+        transform: translate(30px, -40px);
+    }
+
+}
+
+
+// Disparition du loader
+
+@keyframes sortieLoader {
+    0%,
+    90% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}

@@ -19,6 +19,8 @@ $desktop-width: 1024px;
 @import "./partiels/mixins";
 
 // import des partiels
+@import "./partiels/keyframes";
+@import "./partiels/loader2";
 @import "./partiels/header";
 @import "./partiels/generale";
 @import "./partiels/allbody_page-accueil";
