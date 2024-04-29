@@ -1,7 +1,7 @@
 //
 /* CSS pour body de la page d'accueil */
 
-// positionnement Restaurant
+/* positionnement Restaurant */
 .Positionement {
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@
     }
 }
 
-// Section Explorer-Reserver-Restaurant
+/* Section Explorer-Reserver-Restaurant */
 .ExplorerReserver {
     display: flex;
     flex-direction: column;
@@ -79,7 +79,7 @@
     }
 }
 
-// Section fonctionnement
+/* Section fonctionnement */
 
 .fonctionnement {
     display: flex;
@@ -251,7 +251,7 @@
 
 }
 
-// Animation sur le coeur
+/* Animation sur le coeur  */
 .heart_container {
     // border: 1px solid black;
     position: relative;

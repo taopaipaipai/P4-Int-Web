@@ -4,6 +4,12 @@
     }
 }
 
+@mixin tablette2 {
+    @media screen and (min-width: $tablette2-width) {
+        @content;
+    }
+}
+
 @mixin desktop {
     @media screen and (min-width: $desktop-width) {
         @content;
