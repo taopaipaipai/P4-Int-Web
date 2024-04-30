@@ -29,7 +29,7 @@ Keyframes pour les animations de Flottement
 */
 @keyframes flottementLogoBanner {
   0%, 50%, 100% {
-    transform: translate(-10, -100);
+    transform: translate(-10px, -100px);
     /* Position initiale, pour la suite le flottement se fait en X et Y */
   }
   20% {
