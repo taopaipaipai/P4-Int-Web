@@ -5,7 +5,8 @@
 
 @mixin keyFrames($hauteur, $nomKeyFram) {
     @keyframes #{$nomKeyFram} {
-        0% {
+        0%,
+        50% {
             transform: translateY($hauteur);
             opacity: 0;
         }

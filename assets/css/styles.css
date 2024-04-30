@@ -5,7 +5,7 @@
  Ensemble de keyframes qui seront appelées sur d'autres fichier SCSS
 */
 @keyframes AnimationVersBas {
-  0% {
+  0%, 50% {
     transform: translateY(-200px);
     opacity: 0;
   }
@@ -15,7 +15,7 @@
   }
 }
 @keyframes AnimationVersHaut {
-  0% {
+  0%, 50% {
     transform: translateY(80px);
     opacity: 0;
   }
@@ -511,6 +511,10 @@ a {
 
 .animationMenu3 {
   animation: AnimationVersBas 3s;
+}
+
+.animationMenu4 {
+  animation: AnimationVersBas 5s;
 }
 
 /* Gestion de la disposition des menus et animation bouton check */
